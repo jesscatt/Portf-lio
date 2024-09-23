@@ -1,3 +1,4 @@
+
 /* Estilos Gerais */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -27,12 +28,12 @@ body {
 
 .container:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(255, 102, 102, 0.4); /* Sombra rosa-avermelhada */
+  box-shadow: 0 8px 20px rgba(255, 85, 170, 0.2);
 }
 
 /* Cabeçalho */
 header {
-  background-color: #ff6666; /* Vermelho claro */
+  background-color: #6a0dad; /* Roxo intenso */
   color: white;
   padding: 50px 20px;
   border-radius: 15px;
@@ -41,7 +42,7 @@ header {
 header h1 {
   font-size: 3rem;
   margin: 0;
-  background: -webkit-linear-gradient(#ffcccc, #ff6666); /* Gradiente rosa claro e vermelho */
+  background: -webkit-linear-gradient(#ff00cc, #9900ff); /* Gradiente rosa e roxo */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -55,6 +56,10 @@ nav ul {
   gap: 20px;
 }
 
+nav ul li {
+  display: inline-block;
+}
+
 nav ul li a {
   color: white;
   font-weight: bold;
@@ -62,12 +67,12 @@ nav ul li a {
   font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #ffcccc; /* Rosa claro */
+  background-color: #ff66b2; /* Ajuste no rosa para mais contraste */
   transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #ff6666; /* Vermelho claro no hover */
+  background-color: #e600ac; /* Rosa mais forte */
 }
 
 /* Seções */
@@ -81,14 +86,14 @@ section {
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ffcccc; /* Rosa claro */
+  color: #ff66b2; /* Rosa claro */
 }
 
 section h2::after {
   content: '';
   width: 50px;
   height: 4px;
-  background-color: #ff6666; /* Vermelho claro */
+  background-color: #ff00cc; /* Rosa brilhante */
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;
@@ -101,44 +106,109 @@ section p {
 }
 
 /* Galeria de Fotos */
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 102, 102, 0.5); /* Sombra vermelha */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Links */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(255, 85, 170, 0.4); /* Efeito hover em rosa */
+}
+
+/* Trabalhos e Links */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
 a {
-  color: #ffcccc; /* Rosa claro */
+  text-decoration: none;
+  color: #ff66b2; /* Rosa claro */
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #ff00cc; /* Rosa brilhante */
+  transition: width 0.3s;
+  left: 0;
+  bottom: -5px;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 a:hover {
-  color: #ff6666; /* Vermelho claro no hover */
+  color: #ff00cc; /* Rosa mais vibrante no hover */
 }
 
 /* Habilidades, Formação e Certificações */
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
 .skills-list li {
-  background-color: #4d4d4d; /* Cinza escuro */
+  background-color: #3b3750; /* Roxo escuro */
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(255, 102, 102, 0.5); /* Sombra vermelha */
+  box-shadow: 0 4px 16px rgba(255, 85, 170, 0.4); /* Sombra rosa */
+}
+
+.skills-list li strong {
+  color: #ff66b2; /* Destaque rosa */
+  font-size: 1.1rem;
 }
 
 /* Contato */
+.contact-list li {
+  margin-bottom: 15px;
+}
+
 .contact-list li a {
-  color: #ffcccc; /* Rosa claro */
+  font-size: 1.2rem;
+  color: #ff66b2; /* Rosa claro */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact-list li a:hover {
-  color: #ff6666; /* Vermelho claro */
+  color: #ff00cc; /* Rosa vibrante */
 }
 
 /* Rodapé */
 footer {
-  background-color: #ff6666; /* Vermelho claro */
+  background-color: #6a0dad; /* Roxo escuro */
   color: white;
   padding: 20px;
   width: 100%;
@@ -164,5 +234,35 @@ footer p {
 
   nav ul {
     flex-direction: column;
+  }
+}
+/* Seção Sobre Mim */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre imagem e texto */
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+.foto-sobre-mim {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; /* Deixa a imagem circular */
+}
+
+.sobre-texto {
+  flex: 1; /* O texto ocupará o espaço restante */
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column; /* Em telas menores, a imagem ficará acima do texto */
+    text-align: center;
+  }
+
+  .foto-sobre-mim {
+    margin-bottom: 20px;
   }
 }
