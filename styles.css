@@ -163,7 +163,7 @@ a:hover {
   color: #ff00cc; /* Rosa mais vibrante no hover */
 }
 
-/* Habilidades */
+/* Habilidades, Formação e Certificações */
 .skills-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
