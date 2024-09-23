@@ -33,7 +33,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: rgba(255, 102, 178, 0.8); /* Cor roxa com 80% de opacidade */
+  background-color: rgba(255, 102, 178, 0.4); /* Cor roxa com 80% de opacidade */
   color: white;
   padding: 50px 20px;
   border-radius: 15px;
