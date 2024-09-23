@@ -1,4 +1,3 @@
-
 /* Estilos Gerais */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -67,7 +66,7 @@ nav ul li a {
   font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #483D8B; /* Ajuste no rosa para mais contraste */
+  background-color: #483D8B; /* Ajuste no rosa para roxo escuro */
   transition: background-color 0.3s ease;
 }
 
@@ -86,7 +85,7 @@ section {
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ff66b2; /* Rosa claro */
+  color: #483D8B; /* Roxo escuro */
 }
 
 section h2::after {
@@ -132,137 +131,4 @@ ul {
 }
 
 ul li {
-  margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #ff66b2; /* Rosa claro */
-  font-weight: bold;
-  font-size: 1.2rem;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  background: #ff00cc; /* Rosa brilhante */
-  transition: width 0.3s;
-  left: 0;
-  bottom: -5px;
-}
-
-a:hover::after {
-  width: 100%;
-}
-
-a:hover {
-  color: #ff00cc; /* Rosa mais vibrante no hover */
-}
-
-/* Habilidades, Formação e Certificações */
-.skills-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  text-align: left;
-}
-
-.skills-list li {
-  background-color: #3b3750; /* Roxo escuro */
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills-list li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(255, 85, 170, 0.4); /* Sombra rosa */
-}
-
-.skills-list li strong {
-  color: #ff66b2; /* Destaque rosa */
-  font-size: 1.1rem;
-}
-
-/* Contato */
-.contact-list li {
-  margin-bottom: 15px;
-}
-
-.contact-list li a {
-  font-size: 1.2rem;
-  color: #ff66b2; /* Rosa claro */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-list li a:hover {
-  color: #ff00cc; /* Rosa vibrante */
-}
-
-/* Rodapé */
-footer {
-  background-color: #6a0dad; /* Roxo escuro */
-  color: white;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  margin-top: 40px;
-  border-radius: 15px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 1rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-list {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-}
-/* Seção Sobre Mim */
-.sobre-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px; /* Espaço entre imagem e texto */
-  flex-wrap: wrap; /* Permite quebra em telas menores */
-}
-
-.foto-sobre-mim {
-  width: 200px;
-  height: auto;
-  border-radius: 50%; /* Deixa a imagem circular */
-}
-
-.sobre-texto {
-  flex: 1; /* O texto ocupará o espaço restante */
-  color: #e0e0e0;
-}
-
-@media (max-width: 768px) {
-  .sobre-container {
-    flex-direction: column; /* Em telas menores, a imagem ficará acima do texto */
-    text-align: center;
-  }
-
-  .foto-sobre-mim {
-    margin-bottom: 20px;
-  }
-}
+ 
