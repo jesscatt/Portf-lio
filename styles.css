@@ -235,10 +235,34 @@ footer p {
     flex-direction: column;
   }
 }
+/* Seção Sobre Mim */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre imagem e texto */
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
 .foto-sobre-mim {
-  width: 150px;
+  width: 200px;
   height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  border-radius: 50%; /* Deixa a imagem circular */
+}
+
+.sobre-texto {
+  flex: 1; /* O texto ocupará o espaço restante */
+  color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column; /* Em telas menores, a imagem ficará acima do texto */
+    text-align: center;
+  }
+
+  .foto-sobre-mim {
+    margin-bottom: 20px;
+  }
 }
 
