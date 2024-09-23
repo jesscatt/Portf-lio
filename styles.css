@@ -42,7 +42,7 @@ header {
 header h1 {
   font-size: 3rem;
   margin: 0;
-  background: -webkit-linear-gradient(#ff0cc, #9900ff); /* Gradiente rosa e roxo */
+  background: -webkit-linear-gradient(#ff00cc, #9900ff); /* Gradiente rosa e roxo */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -67,7 +67,7 @@ nav ul li a {
   font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #ff66b; /* Ajuste no rosa para mais contraste */
+  background-color: #ff66b2; /* Ajuste no rosa para mais contraste */
   transition: background-color 0.3s ease;
 }
 
