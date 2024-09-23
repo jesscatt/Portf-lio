@@ -3,22 +3,43 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   color: #333;
+  text-align: center;
   line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1000px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Cabeçalho */
 header {
-  background-color: #444;
+  background-color: #007BFF;
   color: white;
   padding: 40px 20px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -28,41 +49,52 @@ nav ul {
   margin: 20px 0 0;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
-  margin: 0 15px;
+  display: inline-block;
 }
 
 nav ul li a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #007BFF;
+  color: #ffcc00;
 }
 
 /* Seções */
 section {
   padding: 40px 20px;
-  background-color: white;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 8px;
+  margin: 40px 0;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #007BFF;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
 section p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #666;
+  color: #555;
 }
 
 /* Trabalhos e Links */
@@ -72,66 +104,103 @@ ul {
 }
 
 ul li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 a {
   text-decoration: none;
   color: #007BFF;
   font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #ffcc00;
+  transition: width 0.3s;
+  left: 0;
+  bottom: -5px;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #ffcc00;
 }
 
 /* Habilidades */
 .skills-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
+  text-align: left;
 }
 
 .skills-list li {
-  background-color: #e9ecef;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 1rem;
-  color: #444;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skills-list li strong {
   color: #007BFF;
+  font-size: 1.1rem;
 }
 
 /* Contato */
 .contact-list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-list li a {
+  font-size: 1.2rem;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-list li a:hover {
+  color: #ffcc00;
 }
 
 /* Rodapé */
 footer {
-  background-color: #444;
+  background-color: #007BFF;
   color: white;
-  text-align: center;
   padding: 20px;
-  position: relative;
   width: 100%;
+  text-align: center;
   margin-top: 40px;
+  border-radius: 10px;
 }
 
 footer p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-  
   .skills-list {
     grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
   }
 }
