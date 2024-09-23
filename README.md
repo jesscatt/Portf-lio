@@ -4,4 +4,4 @@ Este repositório contém o código-fonte do meu portfólio pessoal hospedado no
 
 ## Link do Portfólio
 
-Você pode acessar o portfólio ao vivo em: [https://jesscatt.github.io](https://jesscatt.github.io)
+Você pode acessar o portfólio ao vivo em: [https://jesscatt.github.io/Portfolio/](https://jesscatt.github.io/Portfolio/)
