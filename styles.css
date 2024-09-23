@@ -235,3 +235,10 @@ footer p {
     flex-direction: column;
   }
 }
+.foto-sobre-mim {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
