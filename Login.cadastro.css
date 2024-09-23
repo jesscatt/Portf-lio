@@ -1,0 +1,226 @@
+/* CSS reset */
+*, *:before, *:after { 
+ 
+  margin:0;
+  padding:0;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+body{
+  margin:80px;
+  background: rgb(188, 51, 252);
+}
+
+a{
+  text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links{
+  display: none;
+}
+
+/* content que contem os formulários */
+.content{
+  width: 500px;
+  margin: 1px auto;
+  position: relative;	
+}
+
+/* formatando o cabeçalho dos formulários */
+h1{
+  font-size: 50px;
+  color: #51557E;
+  padding: 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  }
+
+p{
+  margin-bottom:15px;
+}
+p:first-child{
+  margin: 0px;
+}
+label{
+  color: #65027286;
+  position: relative;
+}
+
+/**** estilo de entrada avançado ****/
+/* espaço reservado */
+::-webkit-input-placeholder  {
+  color: #db93e95d; 
+  font-style: italic;
+}
+ 
+input {
+  outline: none;
+}
+
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;	
+  border: 1px solid #816797;
+  
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(95, 9, 88, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(192, 61, 185, 0.329) inset;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;	
+  background: #dfc1ec96;
+  padding: 10px 5px;
+  color: #51557E;
+  font-size: 20px;	
+  border: 1px solid rgb(192, 189, 189);	
+  margin-bottom: 10px;	
+  text-shadow:  1px 1px rgb(185, 183, 183);
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: #9f4ac6;
+}
+
+/*marcando os links para mudar de um formulário para outro */
+.link{
+  position: absolute;
+  background: #e9aff5; 
+  color: #4d4949;
+  left: 0px;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 3px solid #6f1885bd;
+
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+.link a {
+  font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgba(128, 21, 138, 0.911);
+  margin-left: 10px;
+  border: 1px solid #8309ca;
+
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+.link a:hover {
+  color: #540581;
+  background: #856086cb;
+  border: 1px solid #743a7c;
+}
+
+/* estilos para para ambos os formulários */
+#cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%;	
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: rgb(228, 224, 230);
+  border: 1px solid rgba(204, 178, 207, 0.8);
+  
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

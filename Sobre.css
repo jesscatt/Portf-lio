@@ -1,0 +1,119 @@
+.capa-curriculo {
+
+	/* Largura do elemento section */
+	width: 100%;
+	
+	/* Altura do elemento section */
+	height: 400px;
+
+	/* Cor de fundo do elemento */
+	background: #151515;
+
+	
+	display: flex; /* Alinhar itens no meio e colocar lado a lado */
+	align-items: center; /* Todos na mesma linha */
+	justify-content: center; /* Alinhar todos no centro da section */
+}
+
+.titulo-h1 {
+	
+    	text-align: center;
+		
+    }
+
+.foto-capa {
+
+	/* Tamanho do elemento na lateral */
+	width: 45%;
+
+	/* Efeito da foto no formato de círculo */
+	border-radius: 50%;
+	border-style: groove;
+	border-width: 10px;
+	border-color: #992aaf;
+	opacity: 100%;
+	
+}
+
+.foto-capa:hover {
+	
+	opacity: 40%;
+	transition: 200ms;
+	transform: rotate(5deg);
+	
+		
+}
+
+.linha {
+	height: 60%;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: #aaaaaa;
+	margin: 20px;
+
+}
+
+.lista {
+
+	/* Retirar tópicos da lista */
+	list-style: none;
+
+	/* Fonte da lista */
+	font-family: 'Tomorrow', sans-serif;
+
+	/* Distância interna */
+	padding: 0 0 0 50px;
+	
+
+	color: white;
+
+	line-height: 40px;
+
+	font-size: 20px;
+}
+
+
+/* Negrito na primeira linha com Pseudo-Classe */
+.lista li:first-child {
+	
+	/* Negrito */
+	font-weight: bold;
+
+	/* Tamanho da fonte */
+	font-size: 40px;
+	color: #cb73e6ad;
+
+
+}
+
+.sobre-mim {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.titulo-h2 {
+	font-family: 'Tomorrow', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #332F3E;
+	padding: 0.5em;
+
+}
+
+.titulo-h2:hover {
+	font-size: 42px;
+	transition: 200ms;
+}
+
+.texto-sobremim {
+	text-align: center;
+	width: 80%;
+	margin: 0.5em auto;
+	line-height: 20px;
+	font-size: 20px;
+}
+
