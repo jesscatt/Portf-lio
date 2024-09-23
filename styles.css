@@ -3,7 +3,7 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1d1b27;
+  background-color: #1e1e1e; /* Preto suave */
   color: white;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ body {
   max-width: 1000px;
   margin: 20px;
   padding: 20px;
-  background-color: #262337;
+  background-color: #2a2a2a; /* Preto fosco */
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -32,7 +32,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #6a0dad;
+  background-color: #6a0dad; /* Roxo intenso */
   color: white;
   padding: 50px 20px;
   border-radius: 15px;
@@ -41,7 +41,7 @@ header {
 header h1 {
   font-size: 3rem;
   margin: 0;
-  background: -webkit-linear-gradient(#ff00cc, #3333ff);
+  background: -webkit-linear-gradient(#ff00cc, #9900ff); /* Gradiente rosa e roxo */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -66,33 +66,33 @@ nav ul li a {
   font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: #ff66b2;
+  background-color: #ff66b2; /* Rosa */
   transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #ff00cc;
+  background-color: #ff00cc; /* Rosa mais forte */
 }
 
 /* Seções */
 section {
   padding: 40px 20px;
   margin: 40px 0;
-  background-color: #2c2a40;
+  background-color: #333333; /* Preto suave */
   border-radius: 15px;
 }
 
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ff66b2;
+  color: #ff66b2; /* Rosa claro */
 }
 
 section h2::after {
   content: '';
   width: 50px;
   height: 4px;
-  background-color: #ff00cc;
+  background-color: #ff00cc; /* Rosa brilhante */
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;
@@ -101,7 +101,7 @@ section h2::after {
 section p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #e0e0e0;
+  color: #e0e0e0; /* Branco suave */
 }
 
 /* Galeria de Fotos */
@@ -121,7 +121,7 @@ section p {
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(255, 85, 170, 0.4);
+  box-shadow: 0 8px 24px rgba(255, 85, 170, 0.4); /* Efeito hover em rosa */
 }
 
 /* Trabalhos e Links */
@@ -136,7 +136,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #ff66b2;
+  color: #ff66b2; /* Rosa claro */
   font-weight: bold;
   font-size: 1.2rem;
   position: relative;
@@ -149,7 +149,7 @@ a::after {
   width: 0;
   height: 2px;
   display: block;
-  background: #ff00cc;
+  background: #ff00cc; /* Rosa brilhante */
   transition: width 0.3s;
   left: 0;
   bottom: -5px;
@@ -160,7 +160,7 @@ a:hover::after {
 }
 
 a:hover {
-  color: #ff00cc;
+  color: #ff00cc; /* Rosa mais vibrante no hover */
 }
 
 /* Habilidades */
@@ -172,7 +172,7 @@ a:hover {
 }
 
 .skills-list li {
-  background-color: #3b3750;
+  background-color: #3b3750; /* Roxo escuro */
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -181,11 +181,11 @@ a:hover {
 
 .skills-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(255, 85, 170, 0.4);
+  box-shadow: 0 4px 16px rgba(255, 85, 170, 0.4); /* Sombra rosa */
 }
 
 .skills-list li strong {
-  color: #ff66b2;
+  color: #ff66b2; /* Destaque rosa */
   font-size: 1.1rem;
 }
 
@@ -196,18 +196,18 @@ a:hover {
 
 .contact-list li a {
   font-size: 1.2rem;
-  color: #ff66b2;
+  color: #ff66b2; /* Rosa claro */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-list li a:hover {
-  color: #ff00cc;
+  color: #ff00cc; /* Rosa vibrante */
 }
 
 /* Rodapé */
 footer {
-  background-color: #6a0dad;
+  background-color: #6a0dad; /* Roxo escuro */
   color: white;
   padding: 20px;
   width: 100%;
