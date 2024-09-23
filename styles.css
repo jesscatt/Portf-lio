@@ -33,11 +33,12 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color:  #ff66b2; /* Roxo intenso */
+  background-color: rgba(255, 102, 178, 0.8); /* Cor roxa com 80% de opacidade */
   color: white;
   padding: 50px 20px;
   border-radius: 15px;
 }
+
 
 header h1 {
   font-size: 3rem;
